@@ -19,3 +19,10 @@ kamailio:
       - "./config/etc/kamailio:/etc/kamailio"
       #- "./tmp:/tmp"
     restart: always
+
+siremis: 
+    build: ./dockerfiles/siremis
+    net: host
+    volumes: 
+      - "/etc/localtime:/etc/localtime:ro"
+    restart: always

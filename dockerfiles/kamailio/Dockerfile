@@ -23,7 +23,4 @@ RUN apt-get update && \
 
 COPY etc/default/kamailio /etc/default/kamailio
 
-#COPY etc/kamailio/kamailio.cfg /etc/kamailio/kamailio.cfg
-
-
 CMD service kamailio start && sleep infinity
