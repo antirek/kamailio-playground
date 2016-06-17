@@ -20,3 +20,10 @@ RUN apt-get update && \
 	kamailio-mysql-modules kamailio-nth kamailio-presence-modules \
 	kamailio-tls-modules kamailio-websocket-modules kamailio-xml-modules \
 	kamailio-xmpp-modules
+
+COPY etc/default/kamailio /etc/default/kamailio
+
+#COPY etc/kamailio/kamailio.cfg /etc/kamailio/kamailio.cfg
+
+
+CMD service kamailio start && sleep infinity

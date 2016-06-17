@@ -15,4 +15,5 @@ kamailio:
     net: host
     volumes: 
       - "/etc/localtime:/etc/localtime:ro"
+      #- "./tmp:/tmp"
     restart: always
