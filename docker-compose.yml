@@ -7,13 +7,15 @@ mysqldb:
     volumes:
       - "/etc/localtime:/etc/localtime:ro"
       - "./misc/initdb/:/docker-entrypoint-initdb.d"
-      - "/var/store/mysql/lib/mysql:/var/lib/mysql"
+      - "/var/store/mysqldb/lib/mysql:/var/lib/mysql"
     restart: always
+    command: '--sql-mode="NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION"'
 
 kamailio:
     build: ./dockerfiles/kamailio
     net: host
     volumes: 
       - "/etc/localtime:/etc/localtime:ro"
+      - "./config/etc/kamailio:/etc/kamailio"
       #- "./tmp:/tmp"
     restart: always
