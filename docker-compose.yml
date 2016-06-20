@@ -18,6 +18,7 @@ kamailio:
       - "/etc/localtime:/etc/localtime:ro"
       - "./config/etc/kamailio:/etc/kamailio"
       #- "./tmp:/tmp"
+    #command: "kamailio -dd -D 1"
     restart: always
 
 siremis: 

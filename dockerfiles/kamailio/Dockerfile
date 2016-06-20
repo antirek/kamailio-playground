@@ -23,4 +23,6 @@ RUN apt-get update && \
 
 COPY etc/default/kamailio /etc/default/kamailio
 
-CMD service kamailio start && sleep infinity
+COPY etc/rsyslog.d/100-kamailio.conf /etc/rsyslog.d/0-kamailio.conf
+
+CMD sleep 10 && service kamailio start && sleep infinity
