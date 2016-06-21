@@ -17,7 +17,7 @@ kamailio:
     volumes: 
       - "/etc/localtime:/etc/localtime:ro"
       - "./config/etc/kamailio:/etc/kamailio"
-      #- "./tmp:/tmp"
+      - "./tmp:/tmp"
     #command: "kamailio -dd -D 1"
     restart: always
 

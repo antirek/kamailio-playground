@@ -1,4 +1,34 @@
-# kamailio-compose
+# kamailio playground
+
+## prepare
+
+- linux 64-bit
+
+- docker
+
+- docker-compose
+
+
+## install
+
+> git clone https://github.com/antirek/kamailio-playground.git
+
+> cd kamailio-compose
+
+> docker-compose up -d 
+
+> docker ps
+
+see docker kamailio container <id>
+
+> docker exec -it <id> bash
+
+> $(in docker container) kamctl add 101@qw.ru 101 
+
+> $(in docker container) kamctl add 101@qw.ru 101
+
+register phones and make call
+
 
 ### Links
 
