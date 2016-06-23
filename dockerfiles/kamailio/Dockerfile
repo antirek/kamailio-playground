@@ -25,12 +25,14 @@ COPY etc/default/kamailio /etc/default/kamailio
 
 #COPY etc/rsyslog.conf /etc/rsyslog.conf
 
-#COPY etc/rsyslog.d/100-kamailio.conf /etc/rsyslog.d/0-kamailio.conf
+COPY etc/rsyslog.d/100-kamailio.conf /etc/rsyslog.d/0-kamailio.conf
 
-COPY etc/rsyslog.d/50-default.conf /etc/rsyslog.d/50-default.conf
+#COPY etc/rsyslog.d/50-default.conf /etc/rsyslog.d/50-default.conf
 
-CMD touch /var/log/kamailio.log && \
-	chown syslog /var/log/kamailio.log && \
-	chgrp adm /var/log/kamailio.log && \
-	service rsyslog start && \
-	sleep 10 && service kamailio start && sleep infinity
+CMD touch /var/log/kamailio/kamailio.log && \
+	chown syslog /var/log/kamailio/kamailio.log && \
+	chgrp adm /var/log/kamailio/kamailio.log && \
+	service rsyslog start &&\
+	sleep 10 && \
+	service kamailio start && \
+	sleep infinity

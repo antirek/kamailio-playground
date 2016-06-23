@@ -19,9 +19,9 @@
 
 > docker ps
 
-see docker kamailio container <id>
+see docker kamailio container "id"
 
-> docker exec -it <id> bash
+> docker exec -it "id" bash
 
 > $(in docker container) kamctl add 101@qw.ru 101 
 

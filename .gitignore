@@ -39,3 +39,6 @@ jspm_packages
 
 
 tmp
+
+var/log
+store/mysqldb
