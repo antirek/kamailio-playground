@@ -13,7 +13,7 @@
 
 > git clone https://github.com/antirek/kamailio-playground.git
 
-> cd kamailio-compose
+> cd kamailio-playground
 
 > docker-compose up -d 
 
@@ -25,7 +25,7 @@ see docker kamailio container "id"
 
 > $(in docker container) kamctl add 101@qw.ru 101 
 
-> $(in docker container) kamctl add 101@qw.ru 101
+> $(in docker container) kamctl add 102@qw.ru 102
 
 register phones and make call
 
