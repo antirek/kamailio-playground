@@ -13,34 +13,28 @@
 
 ### 1. Basic 
 
-./1.basic    kamailio from packages on ubuntu 14.04  with siremis web interface
-
+[readme](1.basic/README.md) kamailio from packages on ubuntu 14.04  with siremis web interface
 
 
 ### 2. Source 
 
-./2.source   kamailio from sources on ubuntu 16.04 
+[readme](2.source/README.md) kamailio from sources on ubuntu 16.04 
 
 
 
+## Links
 
-### Links
-
-https://sonnguyen.ws/install-kamailio-debianubuntu/
-
-https://www.kamailio.org/wiki/cookbooks/4.4.x/pseudovariables
-
-[How to Debug Asterisk and Kamailio](https://wiki.4psa.com/display/KB/How+to+Debug+Asterisk+and+Kamailio)
+see [links](LINKS.md)
 
 
 ### tools
 
-#### blink
+#### blink (softphone)
 
 http://icanblink.com/
 
 
-#### sngrep
+#### sngrep 
 
 https://github.com/irontec/sngrep
 

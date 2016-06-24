@@ -9,15 +9,13 @@ with
 - and siremis web interface
 
 
-
-
 ## install
 
 > git clone https://github.com/antirek/kamailio-playground.git
 
-> cd kamailio-playground
+> cd kamailio-playground/1.basic
 
-> docker-compose up -d 
+> docker-compose up -d
 
 > docker ps
 
@@ -30,3 +28,4 @@ see docker kamailio container "id"
 > $(in docker container) kamctl add 102@qw.ru 102
 
 register phones and make call
+
