@@ -1,22 +1,22 @@
 
 kamailio
 
-- install from packages 
+- install from sources
 
-- on ubuntu 14.04
+- on ubuntu 16.04 (for dtls  1.2, openssl)
 
-- and siremis web interface
 
 
 ## install
 
 > git clone https://github.com/antirek/kamailio-playground.git
 
-> cd kamailio-playground/1.basic
+> cd kamailio-playground/2.source
 
 > docker-compose up -d
 
 > docker ps
+
 
 see docker kamailio container "id"
 
@@ -27,4 +27,3 @@ see docker kamailio container "id"
 > $(in docker container) kamctl add 102@qw.ru 102
 
 register phones and make call
-

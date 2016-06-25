@@ -1,0 +1,22 @@
+mysqldb:
+    image: mysql
+    net: host
+    environment: 
+      - MYSQL_ROOT_PASSWORD=1234
+      - MYSQL_DATABASE=kamailio
+    volumes:
+      - "/etc/localtime:/etc/localtime:ro"
+      - "./misc/initdb/:/docker-entrypoint-initdb.d"
+      - "./store/mysqldb/lib/mysql:/var/lib/mysql"
+    restart: always
+    command: '--sql-mode="NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION"'
+
+kamailio:
+    build: ./dockerfiles/kamailio
+    net: host
+    volumes: 
+      - "/etc/localtime:/etc/localtime:ro"
+      - "./config/etc/kamailio:/etc/kamailio"      
+      - "./var/log/kamailio:/var/log/kamailio"
+    #command: "kamailio -dd -D 1"
+    restart: always
