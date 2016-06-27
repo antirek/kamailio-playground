@@ -16,7 +16,8 @@ kamailio:
     net: host
     volumes: 
       - "/etc/localtime:/etc/localtime:ro"
-      - "./config/etc/kamailio:/etc/kamailio"      
+      - "./config/etc/kamailio:/etc/kamailio"
       - "./var/log/kamailio:/var/log/kamailio"
+      - "./tmp:/tmp"
     #command: "kamailio -dd -D 1"
     restart: always

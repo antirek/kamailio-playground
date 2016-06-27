@@ -19,6 +19,7 @@ GROUP=root
 #PKG_MEMORY=8
  
 # Config file
+
 CFGFILE=/etc/kamailio/kamailio.cfg
 #CFGFILE=/usr/local/etc/kamailio/kamailio.cfg
 
