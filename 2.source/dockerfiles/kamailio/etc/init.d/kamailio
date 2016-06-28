@@ -22,7 +22,7 @@ HOMEDIR=/var/run/$NAME
 PIDFILE=$HOMEDIR/$NAME.pid
 DEFAULTS=/etc/default/$NAME
 CFGFILE=/etc/$NAME/kamailio.cfg
-RUN_KAMAILIO=yes
+RUN_KAMAILIO=no
 USER=kamailio
 GROUP=kamailio
 # Amount of shared and private memory to allocate
@@ -30,6 +30,8 @@ GROUP=kamailio
 SHM_MEMORY=64
 PKG_MEMORY=8
 DUMP_CORE=no
+
+echo $CFGFILE
 
 # Do not start kamailio if fork=no is set in the config file
 # otherwise the boot process will just stop
